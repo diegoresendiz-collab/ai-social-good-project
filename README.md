@@ -1,9 +1,3 @@
-## Problem — Who is affected, and what specifically breaks down for them today?
-## AI Capability — Which lab capability addresses the failure point, and why does it fit?
-## Workflow — What goes in, what does the AI do, what comes out, and who acts on the output? Include screenshots of output
-## Failure Case — One specific failure, with a reference to the lab output that showed it is possible.
-## Oversight and Tradeoff — Where does human review sit, and what does the one change cost 
-
 # AI Waste Sorting Assistant (San Jose)
 
 ## Team Members
@@ -51,15 +45,11 @@ These capabilities directly address the failure point by transforming confusing 
 
 **Screenshots:**
 
-### Lab 2 — Structured Data Extraction
-![Lab 2 Output](images/lab2_structured_output.png)
+![Lab 2 Output](images/images/lab2_structured_output.png)
 
-### Lab 3 — Image Recognition
-![Lab 3 Output](images/lab3_image_analysis.png)
+![Lab 3 Output](images/images/lab3_image_analysis.png)
 
-### Edge Case — Mixtec Language Input
-![Edge Case Output](images/edge_case_mixtec.png)
-
+![Edge Case Output](images/images/edge_case_mixtec.png)
 
 ## Failure Case
 
