@@ -51,10 +51,19 @@ These capabilities directly address the failure point by transforming confusing 
 
 **Screenshots:**
 
+### Lab 2 — Structured Data Extraction
+![Lab 2 Output](images/lab2_structured_output.png)
 
+### Lab 3 — Image Recognition
+![Lab 3 Output](images/lab3_image_analysis.png)
+
+### Edge Case — Mixtec Language Input
+![Edge Case Output](images/edge_case_mixtec.png)
 
 
 ## Failure Case
+
+This output shows the system correctly identified Mixtec as a distinct language, but highlights the risk of misclassification for underrepresented users.
 
 **Prompt:**
 "I have a clean-looking Styrofoam takeout container, a coffee cup, and a shiny chip bag."
