@@ -53,28 +53,28 @@ These capabilities directly address the failure point by transforming confusing 
 
 ## Failure Case
 
-This output shows the system correctly identified Mixtec as a distinct language, but highlights the risk of misclassification for underrepresented users.
+The primary failure case in this system is its limited ability to support users who communicate in languages outside the system’s expected set, such as Mixtec.
 
-**Prompt:**
-"I have a clean-looking Styrofoam takeout container, a coffee cup, and a shiny chip bag."
+Prompt: "Ndi kuu nuu pintura vieja xaan batteries kuachi. Na'a Alum Rock. ¿Ndi kuu sa'a ra?"
 
-**Observed Output:**
-The AI classified some items as recyclable based on appearance or material assumptions.
+Observed Output:
+The AI was able to extract key information such as location and item types and correctly identified the language as Mixtec.
 
-**Failure:**
-This is a failure because these items are typically not recyclable: Styrofoam is not accepted in most recycling programs, coffee cups have plastic lining, and chip bags are multi-layer materials. The AI produced confident but incorrect classifications.
+Failure:
+While the system correctly detected the language, it does not have the ability to respond in Mixtec or provide guidance tailored to that user. This creates a functional failure: the system processes the input internally but cannot deliver a usable output to the person who submitted it.
 
-**Real-World Consequence:**
-If a tenant follows this output, they may incorrectly place non-recyclable items into recycling bins, increasing contamination and reducing the effectiveness of waste processing systems.
+Real-World Consequence:
+A tenant who speaks Mixtec may receive a response they cannot understand or may not receive a response at all. As a result, they are effectively excluded from the system and may continue to dispose of hazardous items incorrectly due to lack of accessible guidance.
 
+This failure was tested directly in our Milestone 2 notebook. It highlights a different kind of risk than misclassification: the system appears to work, but fails to serve the user it was intended to help. The Styrofoam example shows a correctness failure, while this case shows an accessibility failure.
 
 ## Oversight and Tradeoff
 
-**Oversight Decision:**
-Human review is required when the AI has medium or low confidence, or when items involve ambiguous materials such as biodegradable plastics or mixed materials. This is necessary because the lab results show that the AI can produce incorrect classifications in edge cases.
+Oversight Decision:
+Human review is required when the system detects a language it cannot reliably support. In this case, although the AI identified Mixtec correctly, it cannot generate a usable response. A human operator must intervene to translate the request and provide instructions in a language the user understands.
 
-**The One Change:**
-The system will include an “unsure / needs human review” category instead of forcing every item into a classification.
+The One Change:
+The system will flag unsupported or low-resource languages and route those requests to a human translator or multilingual support staff instead of attempting to respond automatically.
 
-**Tradeoff:**
-This reduces automation and may slow down the user experience, but it improves accuracy and prevents harmful misclassification, making the system more reliable.
+Tradeoff:
+This introduces delays and requires additional staffing resources. For example, a tenant submitting a request in Mixtec may not receive an immediate response and will need to wait for human assistance. However, this tradeoff ensures that the system remains accessible and does not exclude users who fall outside the model’s supported language range.
