@@ -1,3 +1,14 @@
+"""
+AI Waste Sorting Assistant (San Jose)
+
+This prototype uses Gemini API to:
+- classify waste from text input (Lab 2)
+- analyze waste images (Lab 3)
+- support tenant decision-making at the point of disposal
+
+Adapted from AI4SG lab notebooks and modified for this project.
+"""
+
 # ============================================================
 # Section 3A: Lab 2 — Structured Data Extraction
 # Adapted from the San Jose 311 waste disposal routing context
