@@ -8,8 +8,7 @@
 
 ## Problem
 
-This project focuses on tenants living in multi-unit apartment buildings in San Jose who are trying to dispose of household waste correctly but are unsure which items belong in recycling, compost, or landfill. The failure point is not a lack of information, but that existing waste-sorting rules are difficult to interpret at the moment of disposal. For example, items like greasy pizza boxes, plastic-lined cups, or biodegradable plastics create confusion, leading to incorrect sorting. This results in contamination of recycling streams and inefficiencies in waste management. This problem aligns with UN SDG 11: Sustainable Cities and Communities.
-
+This project focuses on Maria, a tenant living in a multi-unit apartment building in San Jose, who is trying to dispose of household waste correctly but is unsure which items belong in recycling, compost, or landfill. The failure point is not a lack of information, but that existing waste-sorting rules are difficult to interpret at the moment of disposal. For example, when Maria encounters items like greasy pizza boxes, plastic-lined cups, or biodegradable plastics, she does not know which bin to use. This leads to incorrect sorting, contamination of recycling streams, and inefficiencies in waste management. This problem aligns with UN SDG 11: Sustainable Cities and Communities.
 
 ## AI Capability
 
